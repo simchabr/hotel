@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+  box-sizing: border-box;
+}
+        body {
+          margin: 0;
+        }
+        .header {
+            background-image: url(רקע.PNG);
+            background-size: cover;
+                 padding: 20px;
+          text-align: center;
+        }
+        .column {
+  float: left;
+  padding: 10px;
+}
+.column.laft {
+  
+  padding: 20px;
+          text-align: center;
+  width: 33%;
+}
+/* Left and right column */
+.column.side {
+    text-align: center;
+
+  width: 33%;
+}
+
+/* Middle column */
+.column.middle {
+    text-align: center;
+
+  width: 33%;
+}
+.row
+{
+    background-image: url(רקעגדול.PNG);
+background-size: cover;
+}
+/* Clear floats after the columns */
+.row:after {
+
+content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>באיזה חדר תבחר</h1>
+      </div>
+    <div class="row">
+        <div class="column laft">
+          <img src="חדר סטנדרט.PNG" alt="">
+          <a href="מידע חדרסטנדרט.html"> <h1> מידע על החדר</h1></a> 
+
+        </div>
+        
+        <div class="column middle">
+          <img src="חדר סופריר.PNG" alt="">       
+          <a href="מידעחדרסופריר.html"> <h1> מידע על החדר</h1></a> 
+
+        </div>
+
+        <div class="column side">
+          <img src="חדר דלוקס.PNG" alt="">
+          <a href="מידעחדרדלוקס.html"> <h1> מידע על החדר</h1></a> 
+
+
+        </div>
+      </div>
+        
+</body>
+</html>
